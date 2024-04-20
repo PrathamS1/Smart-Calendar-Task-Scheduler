@@ -7,7 +7,6 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 def generate_calendar(start_date, end_date, schedule):
-    print(start_date, end_date)
     # Generate a calendar grid based on the start and end dates
     calendar = []
     
@@ -19,7 +18,6 @@ def generate_calendar(start_date, end_date, schedule):
         month = current_date.month
         # Generate calendar for the current month
         month_calendar = monthcalendar(year, month)
-        print(month_calendar)
         # Initialize list of weeks for current month
         weeks = []
         
@@ -59,7 +57,6 @@ def generate_calendar(start_date, end_date, schedule):
         with open(filename, 'w') as file:
             json.dump(calendar, file, indent=4)
             
-    print(calendar)
     return calendar
 
 def round_robin_schedule(tasks, start_date, deadline, max_hours_per_day=8):
@@ -118,7 +115,6 @@ def task_form():
         
         # Perform scheduling
         schedule = round_robin_schedule(tasks, start_date.strftime('%Y-%m-%d'), deadline.strftime('%Y-%m-%d'), max_hours_per_day)
-        print(schedule)
         # Generate calendar based on start and deadline dates
         calendar = generate_calendar(start_date, deadline, schedule)
         return render_template('calendar_page.html', calendar=calendar)
