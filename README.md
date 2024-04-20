@@ -20,7 +20,7 @@ This is a web application for scheduling tasks within a specified time frame. It
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/Smart-Calendar-Task-Scheduler.git
+    git clone https://github.com/PrathamS1/Smart-Calendar-Task-Scheduler.git
     ```
 
 2. Navigate to the project directory:
