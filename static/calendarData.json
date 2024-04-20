@@ -1,0 +1,170 @@
+[
+    {
+        "month": "June",
+        "year": 2024,
+        "weeks": [
+            [
+                {
+                    "date": "-",
+                    "tasks": []
+                },
+                {
+                    "date": "-",
+                    "tasks": []
+                },
+                {
+                    "date": "-",
+                    "tasks": []
+                },
+                {
+                    "date": "-",
+                    "tasks": []
+                },
+                {
+                    "date": "-",
+                    "tasks": []
+                },
+                {
+                    "date": "01",
+                    "tasks": []
+                },
+                {
+                    "date": "02",
+                    "tasks": []
+                }
+            ],
+            [
+                {
+                    "date": "03",
+                    "tasks": []
+                },
+                {
+                    "date": "04",
+                    "tasks": []
+                },
+                {
+                    "date": "05",
+                    "tasks": []
+                },
+                {
+                    "date": "06",
+                    "tasks": []
+                },
+                {
+                    "date": "07",
+                    "tasks": []
+                },
+                {
+                    "date": "08",
+                    "tasks": []
+                },
+                {
+                    "date": "09",
+                    "tasks": []
+                }
+            ],
+            [
+                {
+                    "date": "10",
+                    "tasks": []
+                },
+                {
+                    "date": "11",
+                    "tasks": []
+                },
+                {
+                    "date": "12",
+                    "tasks": []
+                },
+                {
+                    "date": "13",
+                    "tasks": []
+                },
+                {
+                    "date": "14",
+                    "tasks": []
+                },
+                {
+                    "date": "15",
+                    "tasks": []
+                },
+                {
+                    "date": "16",
+                    "tasks": []
+                }
+            ],
+            [
+                {
+                    "date": "17",
+                    "tasks": []
+                },
+                {
+                    "date": "18",
+                    "tasks": []
+                },
+                {
+                    "date": "19",
+                    "tasks": []
+                },
+                {
+                    "date": "20",
+                    "tasks": [
+                        {
+                            "name": "A",
+                            "date": "2024-06-20",
+                            "hours": 5
+                        }
+                    ]
+                },
+                {
+                    "date": "21",
+                    "tasks": [
+                        {
+                            "name": "A",
+                            "date": "2024-06-21",
+                            "hours": 3
+                        }
+                    ]
+                },
+                {
+                    "date": "22",
+                    "tasks": []
+                },
+                {
+                    "date": "23",
+                    "tasks": []
+                }
+            ],
+            [
+                {
+                    "date": "24",
+                    "tasks": []
+                },
+                {
+                    "date": "25",
+                    "tasks": []
+                },
+                {
+                    "date": "26",
+                    "tasks": []
+                },
+                {
+                    "date": "27",
+                    "tasks": []
+                },
+                {
+                    "date": "28",
+                    "tasks": []
+                },
+                {
+                    "date": "29",
+                    "tasks": []
+                },
+                {
+                    "date": "30",
+                    "tasks": []
+                }
+            ]
+        ]
+    }
+]

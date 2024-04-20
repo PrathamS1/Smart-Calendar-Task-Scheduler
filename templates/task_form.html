@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Scheduler - Enter Tasks</title>
+    <style>
+        body {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            width: 50%;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        textarea {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .task-container {
+            margin-bottom: 20px;
+        }
+
+        .remove-task {
+            color: red;
+            cursor: pointer;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        .scheduleBtn {
+        padding: 1.3em 3em;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: #000;
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+        }
+
+        .scheduleBtn:hover {
+        background-color: #23c483;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
+        }
+
+        .scheduleBtn:active {
+        transform: translateY(-1px);
+        }
+        #work_hours_per_day{
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task Scheduler</h1>
+    <h2>Enter Schedule Details:</h2>
+    <form action="/" method="post" id="taskForm">
+        <label for="start_date">Start Date:</label>
+        <input type="date" id="start_date" name="start_date"><br><br>
+        
+        <label for="deadline">Deadline:</label>
+        <input type="date" id="deadline" name="deadline"><br><br>
+
+        <label for="work_hours_per_day">How many hours you can work per day?</label>
+        <input type="number" id="work_hours_per_day" name="work_hours_per_day" min="1"><br><br>
+        
+        <hr>
+        
+        <h2>Enter Task Details:</h2>
+        <div class="task-container">
+            <label for="task_name">Task Name:</label>
+            <input type="text" id="task_name" name="task_name[]">
+            
+            <label for="completion_time">Completion Time (hours):</label>
+            <input type="number" id="completion_time" name="completion_time[]" min="1">
+        </div>
+        
+        <button type="button" id="addTask">+ Add Task</button>
+        <br><br>
+        
+        <input class="scheduleBtn" type="submit" value="Schedule Tasks">
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const addTaskBtn = document.getElementById('addTask');
+            const form = document.getElementById('taskForm');
+            
+            addTaskBtn.addEventListener('click', function() {
+                const taskContainer = document.createElement('div');
+                taskContainer.classList.add('task-container');
+                taskContainer.innerHTML = `
+                    <label for="task_name">Task Name:</label>
+                    <input type="text" name="task_name[]">
+                    
+                    <label for="completion_time">Completion Time (hours):</label>
+                    <input type="number" name="completion_time[]" min="1">
+                    <span class="remove-task" onclick="removeTask(this)">Remove</span>
+                `;
+                form.insertBefore(taskContainer, addTaskBtn);
+            });
+        });
+
+        function removeTask(element) {
+            element.parentElement.remove();
+        }
+    </script>
+</body>
+</html>
