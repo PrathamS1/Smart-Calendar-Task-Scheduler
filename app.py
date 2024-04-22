@@ -83,7 +83,6 @@ def round_robin_schedule(tasks, start_date, deadline, max_hours_per_day=8):
             task['hours'] -= remaining_hours
             tasks.append(task)
             remaining_hours = 0
-        
         current_date += timedelta(days=1)
     
     return schedule
