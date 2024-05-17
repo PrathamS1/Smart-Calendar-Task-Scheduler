@@ -112,7 +112,7 @@
                         {
                             "name": "A",
                             "date": "2024-06-20",
-                            "hours": 2
+                            "hours": 4
                         }
                     ]
                 },
@@ -122,39 +122,81 @@
                         {
                             "name": "B",
                             "date": "2024-06-21",
-                            "hours": 2
+                            "hours": 4
                         }
                     ]
                 },
                 {
                     "date": "22",
-                    "tasks": []
+                    "tasks": [
+                        {
+                            "name": "C",
+                            "date": "2024-06-22",
+                            "hours": 4
+                        }
+                    ]
                 },
                 {
                     "date": "23",
-                    "tasks": []
+                    "tasks": [
+                        {
+                            "name": "A",
+                            "date": "2024-06-23",
+                            "hours": 4
+                        }
+                    ]
                 }
             ],
             [
                 {
                     "date": "24",
-                    "tasks": []
+                    "tasks": [
+                        {
+                            "name": "B",
+                            "date": "2024-06-24",
+                            "hours": 4
+                        }
+                    ]
                 },
                 {
                     "date": "25",
-                    "tasks": []
+                    "tasks": [
+                        {
+                            "name": "C",
+                            "date": "2024-06-25",
+                            "hours": 2
+                        }
+                    ]
                 },
                 {
                     "date": "26",
-                    "tasks": []
+                    "tasks": [
+                        {
+                            "name": "A",
+                            "date": "2024-06-26",
+                            "hours": 2
+                        }
+                    ]
                 },
                 {
                     "date": "27",
-                    "tasks": []
+                    "tasks": [
+                        {
+                            "name": "A",
+                            "date": "2024-06-27",
+                            "hours": 4
+                        }
+                    ]
                 },
                 {
                     "date": "28",
-                    "tasks": []
+                    "tasks": [
+                        {
+                            "name": "A",
+                            "date": "2024-06-28",
+                            "hours": 1
+                        }
+                    ]
                 },
                 {
                     "date": "29",
