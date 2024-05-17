@@ -30,10 +30,7 @@ This is a web application for scheduling tasks within a specified time frame. It
     ```
 
 3. Install dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
+     Refer to requirements.txt file.
 
 ## Usage
 
