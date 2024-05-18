@@ -29,8 +29,9 @@ This is a web application for scheduling tasks within a specified time frame. It
     cd Smart-Calendar-Task-Scheduler
     ```
 
-3. Install dependencies:
-     Refer to requirements.txt file.
+3. Prerequisites:
+    - Python 3.x
+    - Flask v3.0.x
 
 ## Usage
 
